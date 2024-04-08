@@ -4,15 +4,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Blog de Escanor</title>
+    <!-- <link rel="stylesheet" href="css/styles-physical.css"> -->
+    <link rel="stylesheet" href="css/styles-logical.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>
-        Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.
-    </p>
-    <img src="images/Chrome.png" alt="Logo de Google" title="Logo de Google">
-    <img src="images/VisualSC.png" alt="Logo de VSC" title="Logo de VSC">
-    <img src="images/Figma.png" alt="Logo de Figma" title="Logo de Figma">
-    <img src="images/GitHub.png" alt="Logo de GitHub" title="Logo de GitHub">
+    <div class="hero"></div>
+
+    <div class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <header>
+                    <nav>
+                        <details open>
+                            <summary>Setup</summary>
+                            <ol>
+                                <li><a href="#gc">Google Chrome</a></li>
+                                <li><a href="#vsc">Visual Studio Code</a></li>
+                                <li><a href="#figma">Figma</a></li>
+                                <li><a href="#gh">GitHub</a></li>
+                            </ol>
+                        </details>
+            
+                        <details open>
+                                <summary>
+                                    Conceptos esenciales del Desarrollo Web
+                                </summary>
+                            <ol>
+                                <li><a href="#html">Qué es HTML?</a></li>
+                                <li><a href="#marks">Etiquetas</a></li>
+                                <li><a href="#dom">DOM</a></li>
+                                <li><a href="#attrib">Atributos</a></li>
+                                <li><a href="#sem">Semántica</a></li>
+                                <li><a href="#css">Qué es CSS?</a></li>
+                            </ol>
+                        </details>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+    </div>
+    <main class="main">
+
+            <div class="wrapper">
+                <div class="main-content">
+                    
+                    <h1>Curso esencial de HTML y CSS</h1>
+                    <p>
+                        Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes
+                        y en 3 sobre layouts.
+                    </p>
+                    <hr>
+                    
+                    <h2>
+                        Setup
+                    </h2>
+            
+            <section class="section-content">
+                <img src="images/Chrome.png" alt="Logo de Google" title="Logo de Google" id="gc">
+                <h3>Google Chrome</h3>
+                <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.
+                </p>
+                
+                <img src="images/VisualSC.png" alt="Logo de VSC" title="Logo de VSC" id="vsc">
+                <h3>Visual Studio Code</h3>
+                <p>Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en el que se desemvuelva.      
+                </p>
+        
+                <img src="images/Figma.png" alt="Logo de Figma" title="Logo de Figma" id="figma">
+                <h3>Figma</h3>
+                <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
+                
+                <img src="images/GitHub.png" alt="Logo de GitHub" title="Logo de GitHub" id="gh">
+                <h3>GitHub</h3>
+                <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
+                <blockquote>
+                    <p>
+                        "Este es el inicio de tu carrera como desarrollador Web"
+                    </p>
+                    <span>
+                        Leonidas Esteban
+                    </span>
+                    
+                </blockquote>
+                <hr>
+                  
+                    <h2>Conceptos esenciales del Desarrollo Web</h2>
+                    <h3 id="html">Qué es HTML?</h3>
+                    <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido. <BR></BR>
+                    <code>const name = 'Steve'</code>
+                    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            
+        &lt;/body&gt;
+        &lt;/html&gt;
+                    </pre>
+                
+                    </p>
+            
+                    <h3 id="marks">Etiquetas</h3>
+                    <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
+                    <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer, section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como Software Developer.</p>
+            
+                    <h3 id="dom">DOM</h3>
+                    <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
+                    <img src="images/dom.png" alt="Estructura árbol que representa al Document Object Model">
+            
+            
+                    <h3 id="attrib">El modelo de caja está compuesto por:</h3>
+                    <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
+                        <ol>
+                            <li>Tamaño del del contenido / ancho y alto</li>
+                                <li>Padding / Relleno</li>
+                                <li>Border / Bordes</li>
+                                <li>Margin / Márgenes</li>
+                        </ol>
+                    <h3 id="sem">Propiedades físicas para el modelo de caja</h3>
+                        <ol>
+                            <li>width / height</li>
+                            <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
+                            <li>border / border-top | border-right | border-bottom | border-left</li>
+                            <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
+                        </ol>
+            
+                    <h3 id="css">Propiedades lógicas para el modelo de caja:</h3>
+                        <ul>
+                            <li>inline-size / block-size</li>
+                            <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
+                            <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
+                            <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+                        </ul>
+            
+                    <h3>Modelo de caja</h3>
+                    <img src="images/Rectangle56.png" alt="">
+            </section>
+        
+            <div class="section-content">
+                <h2>Hola, estos son algunos videos chidos</h2>
+                <div class="slider">
+                    <scroll-container class="slider-container">
+                        <scroll-page class="slider-slide" id="video01">
+                            <!-- <h1>Element 01</h1> -->
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/FIjz9JyMwo0?si=EXdcbtdSTdg92due" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </scroll-page>
+                        <scroll-page class="slider-slide" id="video02">
+                            <!-- <h1>Element 02</h1> -->
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/KKelNzz_ktI?si=Yu-FfIwoNJOCwulT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </scroll-page>
+                        <scroll-page class="slider-slide" id="video03">
+                            <!-- <h1>Element 03</h1> -->
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/UhzlM28dHiY?si=VuPfCcr_BsqNmEku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </scroll-page>
+                    </scroll-container>
+                    <div class="slider-bullet-list">
+                        <a href="#video01" class="slider-bullet"></a>
+                        <a href="#video02" class="slider-bullet"></a>
+                        <a href="#video03" class="slider-bullet"></a>
+                    </div>
+                </div>
+            </div>
+
+                <p>visítanos en:
+                    <a href="https://www.mediaworks.pe" target="_blank">MediaWorks Website</a>
+                </p>
+                <p>Si tienes alguna pregunta escríbeme a: 
+                    <a href="mailto:lordstev@gmail.com">lordstev@gmail.com</a>
+                </p>
+                <div class="section-content">
+                    <h2>Ingresa a nuestro newsletter</h2>
+                    <form action="#" class="form">
+                        <!-- <select name="" id="">
+                            <option value="">Curso 1</option>
+                            <option value="">Curso 2</option>
+                        </select>
+                        <input type="checkbox">
+                        <input type="radio"> -->
+                        <input type="text" required placeholder="Nombre">
+                        <input type="text" required placeholder="Correo electrónico">
+                        <input type="submit" value="Suscribirme">
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </main>
+    
 </body>
 </html>
